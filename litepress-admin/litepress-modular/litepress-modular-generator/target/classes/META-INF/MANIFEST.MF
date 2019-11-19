@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: guns-generator
+Implementation-Version: 1.0.0
+Built-By: lifeng
+Implementation-Vendor-Id: sz.fzf.litepress
+Build-Jdk: 1.8.0_202
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/litepress-modular-generator
+Created-By: Maven Integration for Eclipse
+

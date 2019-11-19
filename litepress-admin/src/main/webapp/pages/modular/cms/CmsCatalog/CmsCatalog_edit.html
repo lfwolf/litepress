@@ -1,0 +1,27 @@
+@layout("/common/_container.html",{bg:"bg-white",js:["/assets/modular/cms/CmsCatalog/CmsCatalog_edit.js"]}){
+<form id="CmsCatalogForm" lay-filter="CmsCatalogForm" class="layui-form model-form">
+    <input name="id" type="hidden" value="${item.id}"/>
+    <div class="layui-form-item">
+        <label class="layui-form-label">封面图片<span style="color: red;">*</span></label>
+        <div class="layui-input-block">
+            <input name="cover" placeholder="请输入封面图片" value="${item.cover}" type="text" class="layui-input" lay-verify="required" required/>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">名称<span style="color: red;">*</span></label>
+        <div class="layui-input-block">
+            <input name="name" placeholder="请输入名称" value="${item.name}" type="text" class="layui-input" lay-verify="required" required/>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">链接地址<span style="color: red;">*</span></label>
+        <div class="layui-input-block">
+            <input name="url" placeholder="请输入链接地址" value="${item.url}" type="text" class="layui-input" lay-verify="required" required/>
+        </div>
+    </div>
+    <div class="layui-form-item text-right">
+        <button class="layui-btn layui-btn-primary" type="button" ew-event="closeDialog">取消</button>
+        <button class="layui-btn" lay-filter="btnSubmit" lay-submit>保存</button>
+    </div>
+</form>
+@}

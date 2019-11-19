@@ -1,0 +1,12 @@
+cn.stylefeng.guns.generator.config
+cn.stylefeng.guns.generator.db
+cn.stylefeng.guns.generator.engine
+cn.stylefeng.guns.generator.engine.base
+cn.stylefeng.guns.generator.engine.config
+cn.stylefeng.guns.generator.executor
+cn.stylefeng.guns.generator.executor.config
+cn.stylefeng.guns.generator.executor.model
+cn.stylefeng.guns.generator.modular.controller
+cn.stylefeng.guns.generator.modular.entity
+cn.stylefeng.guns.generator.modular.factory
+cn.stylefeng.guns.generator.modular.service

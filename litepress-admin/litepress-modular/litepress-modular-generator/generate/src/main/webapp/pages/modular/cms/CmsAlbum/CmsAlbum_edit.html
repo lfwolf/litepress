@@ -1,0 +1,75 @@
+@layout("/common/_container.html",{bg:"bg-white",js:["/assets/modular/cms/CmsAlbum/CmsAlbum_edit.js"]}){
+<form id="CmsAlbumForm" lay-filter="CmsAlbumForm" class="layui-form model-form">
+    <input name="id" type="hidden" value="${item.id}"/>
+    <div class="layui-form-item">
+        <label class="layui-form-label">简称</label>
+        <div class="layui-input-block">
+            <input name="name" placeholder="请输入简称" value="${item.name}" type="text" class="layui-input"/>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">描述</label>
+        <div class="layui-input-block">
+            <input name="description" placeholder="请输入描述" value="${item.description}" type="text" class="layui-input"/>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">专辑图片</label>
+        <div class="layui-input-block">
+            <input name="cover" placeholder="请输入专辑图片" value="${item.cover}" type="text" class="layui-input"/>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">来源</label>
+        <div class="layui-input-block">
+            <input name="source" placeholder="请输入来源" value="${item.source}" type="text" class="layui-input"/>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">版本（乐观锁保留字段）</label>
+        <div class="layui-input-block">
+            <input name="version" placeholder="请输入版本（乐观锁保留字段）" value="${item.version}" type="text" class="layui-input"/>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">排序</label>
+        <div class="layui-input-block">
+            <input name="sort" placeholder="请输入排序" value="${item.sort}" type="text" class="layui-input"/>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">状态</label>
+        <div class="layui-input-block">
+            <input name="status" placeholder="请输入状态" value="${item.status}" type="text" class="layui-input"/>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">创建时间</label>
+        <div class="layui-input-block">
+            <input name="createTime" placeholder="请输入创建时间" value="${item.createTime}" type="text" class="layui-input"/>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">修改时间</label>
+        <div class="layui-input-block">
+            <input name="updateTime" placeholder="请输入修改时间" value="${item.updateTime}" type="text" class="layui-input"/>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">创建人</label>
+        <div class="layui-input-block">
+            <input name="createUser" placeholder="请输入创建人" value="${item.createUser}" type="text" class="layui-input"/>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">修改人</label>
+        <div class="layui-input-block">
+            <input name="updateUser" placeholder="请输入修改人" value="${item.updateUser}" type="text" class="layui-input"/>
+        </div>
+    </div>
+    <div class="layui-form-item text-right">
+        <button class="layui-btn layui-btn-primary" type="button" ew-event="closeDialog">取消</button>
+        <button class="layui-btn" lay-filter="btnSubmit" lay-submit>保存</button>
+    </div>
+</form>
+@}
