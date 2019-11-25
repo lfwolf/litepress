@@ -1,0 +1,14 @@
+{
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Spring Boot-GunsApplication<litepress-admin>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "console": "internalConsole",
+      "mainClass": "cn.stylefeng.guns.GunsApplication",
+      "projectName": "litepress-admin",
+      "args": ""
+    }
+  ]
+}

@@ -5,6 +5,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import org.hibernate.criterion.Example;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -27,6 +28,7 @@ import sz.fzf.litepress.api.entity.PostEntity;
 import sz.fzf.litepress.api.model.LizhiAudioListResult;
 import sz.fzf.litepress.api.model.NavModel;
 import sz.fzf.litepress.api.model.ResponseResult;
+import sz.fzf.litepress.api.repo.BannerRepo;
 import sz.fzf.litepress.api.repo.CatalogRepo;
 import sz.fzf.litepress.api.repo.PostRepository;
 import sz.fzf.litepress.api.service.LizhiService;
@@ -52,11 +54,15 @@ public class IndexController extends BaseController {
 	private PostRepository postRepository;
 	@Autowired
 	private CatalogRepo catalogRepo;
+	@Autowired
+	private BannerRepo bannerRepo;
 	
     @RequestMapping("/index/banner.json")
     @ResponseBody
     public ResponseResult listBanners() {
-    	return this.requestResponse(BannerUrl);
+    	
+    	return this.retSuccess(bannerRepo.findAll());
+    	//return this.requestResponse(BannerUrl);
     }
     
     @RequestMapping("/index/qianerba/catalog.json")
